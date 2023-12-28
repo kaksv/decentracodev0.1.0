@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
-import { signOut } from '@/auth';
+// import { signOut } from '@/auth';
 import DecentracodeLogo from '@/app/ui/decentracode-logo';
 
 export default function SideNav() {
@@ -19,12 +19,14 @@ export default function SideNav() {
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
-        <form action={
-          async () => {
-            'use server';
-            await signOut();
-          }
-        }>
+        <form
+        //  action={
+          // async () => {
+          //   'use server';
+          //   await signOut();
+          // }
+        // }
+        >
           <div className="flex flex-row w-full grow items-center justify-spacearound gap-2 rounded-md bg-gray-50 shadow-xl p-2 md:flex-none md:justify-start md:p-1 md:px-1">
          
           <Link href='https://x.com/Decentracod?t=CgGjEScm0jfGFtEd4pcr8Q&s=09'> 
