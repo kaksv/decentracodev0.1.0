@@ -5,22 +5,25 @@ import {
   HomeIcon,
   CalendarDaysIcon,
   DocumentDuplicateIcon,
-  BriefcaseIcon
+  BriefcaseIcon,
+  ArrowLeftOnRectangleIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+// import { ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/dashboard/base', icon: HomeIcon },
+  
   {
     name: 'Bounties',
-    href: '/dashboard/invoices',
+    href: '/dashboard/bounties',
     icon: BriefcaseIcon,
   },
   { name: 'Events', href: '/dashboard/events', icon: CalendarDaysIcon },
+  { name: 'Back', href: '/', icon: ArrowLeftOnRectangleIcon },
 ];
 
 export default function NavLinks() {

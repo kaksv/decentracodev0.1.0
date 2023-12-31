@@ -68,7 +68,7 @@ export default async function Page () {
   
 
      
-      {bounties?.map(bounty => (
+      {bounties?.reverse().map(bounty => (
         <div className='p-4 border-b border-gray-400' key={bounty.bounty_id}>
           <h1 className='text-2xl font-bold mb-4 '>{bounty.bounty_name}</h1>
           <p className='p-2 text-ml'>{bounty.bounty_description}</p>
