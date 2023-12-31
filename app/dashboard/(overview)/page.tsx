@@ -5,6 +5,8 @@
 
 import supabase from '@/app/config/supabaseconfig';
 
+export const revalidate = 0;
+
 export default async function Page () {
   // const [bounties, setBounties] = useState<any>();
   // const [loading, setLoading] = useState<boolean>(true);
