@@ -1,11 +1,13 @@
 
 
-
-// import { createClient } from '@supabase/supabase-js';
-
-import supabase from '@/app/config/supabaseconfig';
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
 
 export const revalidate = 0;
+const supabase = createClientComponentClient({
+  supabaseUrl: "https://sdnsnvaxabsvaapyspkw.supabase.co",
+  supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkbnNudmF4YWJzdmFhcHlzcGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDEzMTU5NTgsImV4cCI6MjAxNjg5MTk1OH0.Kt6o-LSQP-eR_NhWJ0_f374sCNWy4fmPESziK5KwMPc",
+});
 
 export default async function Page () {
   // const [bounties, setBounties] = useState<any>();
@@ -60,7 +62,7 @@ export default async function Page () {
     // </div>
     const { data: bounties } = await supabase
       .from("bounties")
-      .select('bounty_id, bounty_name, bounty_description, bounty_prize')
+      .select('bounty_id, bounty_name, bounty_description')
     
     
     return (
@@ -72,7 +74,7 @@ export default async function Page () {
         <div className='p-4 border-b border-gray-400' key={bounty.bounty_id}>
           <h1 className='text-2xl font-bold mb-4 '>{bounty.bounty_name}</h1>
           <p className='p-2 text-ml'>{bounty.bounty_description}</p>
-          <p className='p-2 text-xl'>${bounty.bounty_prize}</p>
+          {/* <p className='p-2 text-xl'>${bounty.bounty_prize}</p> */}
         </div>
       ))}
       </>
