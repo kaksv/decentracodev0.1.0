@@ -115,7 +115,7 @@ export default function Page() {
 
                     {/* <div className='mt-5 text-xs border-b border-gray-400 py-4 items-center'><a href="">Forgot your Password?</a></div> */}
                     <div className='mt-3 text-xs flex justify-between'>
-                        <p>You don't have an account?...</p>
+                        <p>No account yet?...</p>
                         <button 
                         onClick={togglelogin} 
                         className='py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300'>Register</button>
