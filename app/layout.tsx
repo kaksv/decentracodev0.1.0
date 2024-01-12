@@ -3,7 +3,7 @@ import { inter } from '@/app/ui/fonts';
 import { Metadata } from "next";
 
 import { Web3Modal } from '@/context/Web3Modal';
-import { ClerkProvider } from '@clerk/nextjs';
+// import { ClerkProvider } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
   title: "Decentracode",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
      <html lang="en">
        <body className={`${inter.className} antialiased`}>
       
@@ -23,6 +23,6 @@ export default function RootLayout({
         
          </body>
      </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 }

@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 
@@ -32,13 +32,13 @@ export default async function Page () {
 <div
  className="absolute top-8 sm:top-2 right-8 sm:right-12 py-1 px-1  font-semibold space-x-4"
  >
-  <button className="relative">
+  {/* <button className="relative">
   <UserButton afterSignOutUrl="/"
-  // appearance={{
-  //   elements: { avatarBox: { width: "2.rem", height: "2.5rem" } }
-  // }} 
+  appearance={{
+    elements: { avatarBox: { width: "2.rem", height: "2.5rem" } }
+  }} 
   />
-  </button>
+  </button> */}
 <button
  className=" rounded-3xl shadow-md  hover:bg-gray-200 -mt-4"
  >
