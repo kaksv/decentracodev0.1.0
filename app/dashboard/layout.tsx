@@ -1,8 +1,7 @@
 'use client';
 
 import SideNav from '@/app/ui/dashboard/sidenav';
-import NavBar from './NavBar';
-// import SideNav2 from '../ui/dashboard/sidenav2';
+
 
 
 export default function Layout({ children } : { children: React.ReactNode }) {
