@@ -12,6 +12,7 @@
   "dependencies": {
     "@clerk/nextjs": "^4.29.2",
     "@heroicons/react": "^2.0.18",
+    "@splinetool/react-spline": "^2.2.6",
     "@supabase/auth-helpers-nextjs": "^0.8.7",
     "@supabase/supabase-js": "^2.4.0",
     "@tailwindcss/forms": "^0.5.7",
@@ -24,6 +25,7 @@
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
     "ethers": "^5.7.2",
+    "lucide-react": "^0.323.0",
     "next": "^14.0.2",
     "next-auth": "^5.0.0-beta.3",
     "postcss": "8.4.31",
