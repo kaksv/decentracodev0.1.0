@@ -18,6 +18,9 @@ const config: Config = {
           600: '#2F6FEB',
         },
       },
+      backgroundImage: {
+        'my_bg': "url(/weare.jpg)",
+      }
     },
     keyframes: {
       shimmer: {

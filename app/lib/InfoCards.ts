@@ -9,20 +9,20 @@ interface IInfoCard {
 
 const infoCards: IInfoCard[] = [
     {
-        title: "Increased Sales",
-        bodyText: " Insightful's predictive analytics identify high-value prospects for targeted pitches, boosting conversion rates and sales by up to 20%.",
+        title: "Web3 Builders Incentivised.",
+        bodyText: " We are keen on forcusing to incentivising Developers to keep developing and growing in the Web3 space.",
         icon: ArrowUpNarrowWide,
         id: 1
     },
     {
-        title: "No Time Wasted",
-        bodyText: "Insightful automates personalized content creation, freeing up sales reps' time for revenue-focused activities and increased productivity.",
+        title: "Web3 Education",
+        bodyText: "Educating Web3 developers to learn and master building web3 Solutions in Africa is at the core.",
         icon: AlarmClockOff,
         id: 2
     },
     {
-        title: "Decreased Churn",
-        bodyText: " Insightful's AI lead engagement and renewal tools reduce customer churn by up to 30% through consistent outreach and retention opportunities.",
+        title: "Founding and Global employment opportunities.",
+        bodyText: " We are dedicated to partner with Stake holders to incubate founders and produce global talent in competent on the global stage.",
         icon: ArrowDownNarrowWide,
         id: 3
     },
