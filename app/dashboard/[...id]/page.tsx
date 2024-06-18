@@ -1,50 +1,53 @@
-
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
-import { notFound } from "next/navigation";
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { notFound } from 'next/navigation';
 
 export const revalidate = 0;
 
 export async function generateStaticParams() {
-    const { data: bounties } = await supabase.from("bounties").select("id");
-    return bounties ??  [];
+  const { data: bounties } = await supabase.from('bounties').select('id');
+  return bounties ?? [];
 }
 const supabase = createClientComponentClient({
-    supabaseUrl: "https://sdnsnvaxabsvaapyspkw.supabase.co",
-    supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkbnNudmF4YWJzdmFhcHlzcGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDEzMTU5NTgsImV4cCI6MjAxNjg5MTk1OH0.Kt6o-LSQP-eR_NhWJ0_f374sCNWy4fmPESziK5KwMPc",
-  });
+  supabaseUrl: 'https://uqlayyqkosbsvoayqanv.supabase.co',
+  supabaseKey:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVxbGF5eXFrb3Nic3ZvYXlxYW52Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg1OTcxMDYsImV4cCI6MjAzNDE3MzEwNn0.j3ldvn_kNM6LqtX69BhPnKQih-rAJq5YO03V70jbyWs',
+});
 
-export default async function Page({params: { id }} : {params: { id: string }
+export default async function Page({
+  params: { id },
+}: {
+  params: { id: string };
 }) {
-    
-
-    const { data: bounty } = await supabase
-    .from('posts')
+  const { data: bounty } = await supabase
+    .from('Post')
     .select()
     .match({ id })
     .single();
 
-    if(!bounty) {
-        notFound();
-    }
-    return (
-        <>
-        <div
-         className='block h-full p-4 m-4 mx-auto bg-gray-100 rounded-xl shadow-md items-start sm:items-center border-gray-200' 
-         >
-         <h1 className='text-2xl font-bold mb-2'>{bounty.title}</h1>
-         <p className='text-xl font-medium mb-4 '>{bounty.description}</p>
-         <div className="sm:flex sm:mx-2 space-x-4">
-         <input className="py-2 mb-3 block rounded-md" type="text" placeholder="Your Project Link"/>
-         <button
-        //    onClick={() =>{}} 
-          className="p-2 mb-3 block  text-lg sm:text-sm text-green-400 font-semibold rounded-full  border 
-         border-purple-400 sm:border-purple-300 hover:text-white hover:bg-green-400 hover:border-transparent 
-          focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2">Submit Project.</button>
-          </div>
+  if (!bounty) {
+    notFound();
+  }
+  return (
+    <>
+      <div className="m-4 mx-auto block h-full items-start rounded-xl border-gray-200 bg-gray-100 p-4 shadow-md sm:items-center">
+        <h1 className="mb-2 text-2xl font-bold">{bounty.title}</h1>
+        <p className="mb-4 text-xl font-medium ">{bounty.content}</p>
+        <div className="space-x-4 sm:mx-2 sm:flex">
+          <input
+            className="mb-3 block rounded-md py-2"
+            type="text"
+            placeholder="Your Project Link"
+          />
+          <button
+            //    onClick={() =>{}}
+            className="mb-3 block rounded-full  border border-purple-400 p-2 text-lg font-semibold  text-green-400 
+         hover:border-transparent hover:bg-green-400 hover:text-white focus:outline-none focus:ring-2 
+          focus:ring-green-400 focus:ring-offset-2 sm:border-purple-300 sm:text-sm"
+          >
+            Submit Project.
+          </button>
         </div>
-
-  
-        
-        </>
-    )
+      </div>
+    </>
+  );
 }
