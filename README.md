@@ -9,7 +9,7 @@ From the frontend, the builders can simply submit a link where the project and s
 
 
 
-To submit your hack, visit the [decentracode platform, and submit your hacks](https://decentracodev0-1-0.vercel.app/).
+- To submit your hack, visit the [decentracode platform, and submit your hacks](https://decentracodev0-1-0.vercel.app/).
 
 For those interested in funding many of these awesome projects to keep African builders capacitated to remain building for a global impact, Share to the escrow smart contract based on the project that intrigues you the most.
 
