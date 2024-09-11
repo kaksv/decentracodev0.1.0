@@ -13,7 +13,9 @@ From the platform, the builders can simply submit a link where the project and s
 
 - To submit your hack, visit the [decentracode platform, and submit your hacks](https://decentracodev0-1-0.vercel.app/).
 
-For those interested in funding many of these awesome projects to keep African builders capacitated to remain building for a global impact, Share to the escrow smart contract based on the project that intrigues you the most.
+For those interested in funding many of these awesome projects to keep African builders capacitated to remain building for a global impact, 
+- Share to the escrow smart contract based on the project that intrigues you the most.
+- [Access the smart contracts right here](https://github.com/kaksv/decentracodev0.1.0/tree/main/smartContracts) 
 
-Access these smart contracts from the smart contracts folder and provide your escrow tokens through our testnet networks such as sepolia eth, optimism and base.
+ or you can access these smart contracts from the smart contracts folder and provide your escrow tokens through our testnet networks such as sepolia eth, optimism and base.
 
