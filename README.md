@@ -7,4 +7,8 @@ We have built an escrow smart contract where the interested sponsor of a given p
 
 From the frontend, the builders can simply submit a link where the project and streamlined documentation can be accessed and then interested members in the web3 community can access these different projects and can decide to sponsor them.
 
-For more information, see the [platform at](https://decentracode.xyz) on the Decentracode Website.
+
+
+To submit your hack, visit the [decentracode platform, and submit your hacks](https://decentracodev0-1-0.vercel.app/).
+
+For those interested in funding many of these awesome projects to keep African builders capacitated to remain building for a global impact, Share to the escrow smart contract based on the project that intrigues you the most.
