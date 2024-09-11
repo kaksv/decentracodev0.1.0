@@ -1,4 +1,4 @@
-## Providing a platform where projects can be sponsored by the community.
+## We are Providing a platform where projects can be sponsored by the community.
 
 What if most of the hackathon projects could be sponsored by the Community? 
 ### The aim of Decentracode
